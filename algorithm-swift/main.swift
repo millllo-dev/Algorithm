@@ -8,3 +8,8 @@
 import Foundation
 
 
+var avx = 123
+var bbse = 345
+
+var tts = max(avx, bbse)
+print(tts)
