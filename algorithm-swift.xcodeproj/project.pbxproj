@@ -21,6 +21,7 @@
 /* Begin PBXFileReference section */
 		B70A1A322FA0497000E8A0D1 /* algorithm-swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "algorithm-swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70A1A3D2FA052AB00E8A0D1 /* twosum_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = twosum_1.swift; sourceTree = "<group>"; };
+		B70A1A3E2FA076EE00E8A0D1 /* wordsearch_79.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wordsearch_79.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -62,6 +63,7 @@
 		B70A1A3C2FA0497700E8A0D1 /* Leetcode */ = {
 			isa = PBXGroup;
 			children = (
+				B70A1A3E2FA076EE00E8A0D1 /* wordsearch_79.swift */,
 				B70A1A3D2FA052AB00E8A0D1 /* twosum_1.swift */,
 			);
 			path = Leetcode;
