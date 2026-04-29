@@ -7,9 +7,22 @@
 
 import Foundation
 
+var s = ""
 
-var avx = 123
-var bbse = 345
-
-var tts = max(avx, bbse)
-print(tts)
+var stack : [Character] = []
+for c in s {
+    switch c {
+    case "[":
+        stack.append("]")
+        break
+    case "(":
+        stack.append(")")
+        break
+    case "{":
+        stack.append("}")
+    default:
+        if let peek = stack.last, !stack.isEmpty && peek == c {
+            stack.removeLast()
+        }
+    }
+}
