@@ -26,3 +26,5 @@ for c in s {
         }
     }
 }
+
+stack.popLast()
