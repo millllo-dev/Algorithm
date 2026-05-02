@@ -7,24 +7,34 @@
 
 import Foundation
 
-var s = ""
-
-var stack : [Character] = []
-for c in s {
-    switch c {
-    case "[":
-        stack.append("]")
-        break
-    case "(":
-        stack.append(")")
-        break
-    case "{":
-        stack.append("}")
-    default:
-        if let peek = stack.last, !stack.isEmpty && peek == c {
-            stack.removeLast()
+func solution(_ queue1: [Int], _ queue2: [Int]) -> Int {
+    var que1 = queue1
+    var que2 = queue2
+    
+    let n = queue1.count
+    
+    var q1sum = queue1.reduce(0, +)
+    var q2sum = queue2.reduce(0, +)
+    
+    for i in 0..<n*3 {
+        if q1sum == q2sum {
+            return i
+        }
+        else if q1sum > q2sum {
+            let value = que1.removeFirst()
+            que2.append(value)
+            
+            q1sum -= value
+            q2sum += value
+        }
+        else {
+            let value = que2.removeFirst()
+            que1.append(value)
+            
+            q1sum += value
+            q2sum -= value
         }
     }
+    
+    return -1;
 }
-
-stack.popLast()

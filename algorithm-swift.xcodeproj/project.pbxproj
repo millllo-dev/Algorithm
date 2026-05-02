@@ -28,6 +28,7 @@
 		B70A1A432FA1DC4300E8A0D1 /* validparentheses_20.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = validparentheses_20.swift; sourceTree = "<group>"; };
 		B70A1A442FA2DDC200E8A0D1 /* dailytemperatures_739.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dailytemperatures_739.swift; sourceTree = "<group>"; };
 		B70A1A452FA324B300E8A0D1 /* keysandrooms_841.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keysandrooms_841.swift; sourceTree = "<group>"; };
+		B79FF1152FA5C374006938EC /* 두큐합.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "두큐합.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -84,6 +85,7 @@
 		B70A1A3F2FA09D2C00E8A0D1 /* Programmers */ = {
 			isa = PBXGroup;
 			children = (
+				B79FF1152FA5C374006938EC /* 두큐합.swift */,
 				B70A1A402FA09D4C00E8A0D1 /* 피로도.swift */,
 			);
 			path = Programmers;

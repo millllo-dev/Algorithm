@@ -35,7 +35,7 @@ class Solution {
             while !queue.isEmpty {
                 guard let currVertex = queue.dequeue() else {break}
 
-                // 
+                //
                 for next in rooms[currVertex] {
                     if(!visited[next]) {
                         queue.enqueue(next)
